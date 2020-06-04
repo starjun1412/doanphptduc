@@ -1,0 +1,14 @@
+ Đồ án mã nguồn mở:
+		website đăng thông tin bán hàng figure
+ - Chức năng :
+       Chức năng người dùng:
+	+ Cho phép đăng bài:gồm tiêu đề, hình ảnh, nội dung, loại sản phẩm.
+	+ chức năng đăng kí
+	+ Đăng nhập để đăng bài, bình luận,
+      Chức năng admin:
+	+ Duyệt bài
+	+ Quản lý tài khoản
+	+ Duyệt Bình Luận
+	+ Quản lý bài viết
+		
+	
