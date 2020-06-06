@@ -2,11 +2,11 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 col-lg-6 d-flex">
-            <a href="index.html" class="site-logo">
-              Meranda
+            <a href="index.php" class="site-logo text-info">
+              FIGURE BÉO BỰ
             </a>
 
-            <a href="#" class="ml-auto d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black"><span
+            <a href="#" class="ml-auto d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-danger"><span
                 class="icon-menu h3"></span></a>
 
           </div>
@@ -44,7 +44,7 @@
             <nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none pl-0 d-lg-block">
                 <li class="active">
-                  <a href="index.html" class="nav-link text-left">Home</a>
+                  <a href="index.php" class="nav-link text-left">Home</a>
                 </li>
                 <li>
                   <a href="categories.html" class="nav-link text-left">Categories</a>
