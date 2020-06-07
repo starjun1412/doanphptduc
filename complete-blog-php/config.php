@@ -8,5 +8,5 @@
 	}
     // define global constants
 	define ('ROOT_PATH', realpath(dirname(__FILE__)));
-	define('BASE_URL', 'http://localhost:80/phpDuc/complete-blog-php/');
+	define('BASE_URL', 'http://localhost:8080/complete-blog-php/');
 ?>
