@@ -2,6 +2,12 @@
 /* * * * * * * * * * * * * * *
 * Returns all published posts
 * * * * * * * * * * * * * * */
+
+function insertComment($id, $name, $comment) {
+	global $conn;
+	$sql = "insert into comments (IdBaiViet, Ten, NoiDung) value ($id, '$name', '$comment')";
+	$result = mysqli_query($conn, $sql);
+}
 function getPublishedPosts() {
 	// use global $conn object in function
 	global $conn;
@@ -31,7 +37,19 @@ function getPostTopic($post_id){
 }
 
 
+function getCommentPost($post_id){
+	global $conn;
+	$sql = "SELECT * FROM comments WHERE IdBaiViet=$post_id";
+	$result = mysqli_query($conn, $sql);
+	// fetch all posts as an associative array called $posts
+	$posts = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
+	$final_posts = array();
+	foreach ($posts as $post) {
+		array_push($final_posts, $post);
+	}
+	return $final_posts;
+}
 /* * * * * * * * * * * * * * * *
 * Returns all posts under a topic
 * * * * * * * * * * * * * * * * */

@@ -16,7 +16,7 @@
 		<?php include(ROOT_PATH . '/admin/includes/menu.php') ?>
 		<!-- Middle form - to create and edit  -->
 		<div class="action">
-			<h1 class="page-title">Create/Edit Admin User</h1>
+			<h1 class="page-title">THÊM/SỬA NGƯỜI DÙNG</h1>
 
 			<form method="post" action="<?php echo BASE_URL . 'admin/users.php'; ?>" >
 

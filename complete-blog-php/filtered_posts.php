@@ -18,7 +18,7 @@
 <!-- content -->
 <div class="content">
 	<h2 class="content-title">
-		Articles on <u><?php echo getTopicNameById($topic_id); ?></u>
+		Sản Phẩm Trong <u><?php echo getTopicNameById($topic_id); ?></u>
 	</h2>
 	<hr>
 	<?php foreach ($posts as $post): ?>
@@ -29,13 +29,14 @@
 					<h3><?php echo $post['title'] ?></h3>
 					<div class="info">
 						<span><?php echo date("F j, Y ", strtotime($post["created_at"])); ?></span>
-						<span class="read_more">Read more...</span>
+						<span class="read_more">Xem Chi Tiết....</span>
 					</div>
 				</div>
 			</a>
 		</div>
 	<?php endforeach ?>
 </div>
+
 <!-- // content -->
 </div>
 <!-- // container -->

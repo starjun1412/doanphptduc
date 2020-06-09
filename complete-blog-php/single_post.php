@@ -40,7 +40,7 @@
 		<div class="post-sidebar">
 			<div class="card">
 				<div class="card-header">
-					<h2>Topics</h2>
+					<h2>Loại Sản Phẩm</h2>
 				</div>
 				<div class="card-content">
 					<?php foreach ($topics as $topic): ?>
@@ -56,5 +56,6 @@
 	</div>
 </div>
 <!-- // content -->
+<?php include( ROOT_PATH . '/comment_box.php'); ?>
 
 <?php include( ROOT_PATH . '/includes/footer.php'); ?>
