@@ -24,26 +24,35 @@ include 'public/head.php';
   </div>
 
 
-
-
+ 
 
   <div class="site-section">
     <div class="container">
     
       <div class="row">
         <div class="col-lg-12">
-          <div class="section-title text-danger">
-            <h2>SẢN PHẨM</h2>
-            
+          <div class="section-title text-success">
+          <h2>LOẠI SẢN PHẨM</h2>
           </div>
-          <?php foreach ($posts as $post) : ?>
-            <div class="post" style="margin-left: 0px;">
-            <img src="<?php echo BASE_URL . '/static/images/' . $post['image']; ?>" class="post_image" alt="" width="200px" height="200px">
+                   <?php foreach ($posts as $post) : ?>
             <?php if (isset($post['topic']['name'])) : ?>
                 <a href="<?php echo BASE_URL . 'filtered_posts.php?topic=' . $post['topic']['id'] ?>" class="btn category">
                   <?php echo $post['topic']['name'] ?>
                 </a>
               <?php endif ?>
+          <?php endforeach ?>
+          
+          <div class="section-title text-danger">
+          <br>
+          <br>
+            <h2>SẢN PHẨM</h2>
+           
+           
+          </div>
+          <?php foreach ($posts as $post) : ?>
+            <div class="post" style="margin-left: 0px;">
+            <img src="<?php echo BASE_URL . '/static/images/' . $post['image']; ?>" class="post_image" alt="" width="200px" height="200px">
+            
             <div class="post-entry-2 d-flex">
 
              

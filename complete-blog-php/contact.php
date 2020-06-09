@@ -51,9 +51,9 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 col-lg-6 d-flex">
-            <a href="index.html" class="site-logo">
-              Meranda
-            </a>
+          <a href="index.php" class="site-logo text-danger">
+          FIGURE BÉO BỰ
+        </a>
 
             <a href="#" class="ml-auto d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black"><span
                 class="icon-menu h3"></span></a>
@@ -82,49 +82,31 @@
       </div>
       
 
-
-      
       <div class="site-navbar py-2 js-sticky-header site-navbar-target d-none pl-0 d-lg-block" role="banner">
 
-      <div class="container">
-        <div class="d-flex align-items-center">
+<div class="container">
+  <div class="d-flex align-items-center">
+
+    <div class="mr-auto">
+      <nav class="site-navigation position-relative text-right" role="navigation">
+        <ul class="site-menu main-menu js-clone-nav mr-auto d-none pl-0 d-lg-block">
+          <li class="active">
+            <a href="index.php" class="nav-link text-left">Trang Chủ</a>
+          </li>
           
-          <div class="mr-auto">
-            <nav class="site-navigation position-relative text-right" role="navigation">
-              <ul class="site-menu main-menu js-clone-nav mr-auto d-none pl-0 d-lg-block">
-                <li class="active">
-                  <a href="index.html" class="nav-link text-left">Home</a>
-                </li>
-                <li>
-                  <a href="categories.html" class="nav-link text-left">Categories</a>
-                </li>
-                <li>
-                  <a href="categories.html" class="nav-link text-left">Politics</a>
-                </li>
-                <li>
-                  <a href="categories.html" class="nav-link text-left">Business</a>
-                </li>
-                <li>
-                    <a href="categories.html" class="nav-link text-left">Health</a>
-                </li>
-                <li><a href="categories.html" class="nav-link text-left">Design</a></li>
-                <li>
-                  <a href="categories.html" class="nav-link text-left">Sport</a>
-                </li>
-                <li><a href="contact.html" class="nav-link text-left">Contact</a></li>
-
-              </ul>                                                                                                                                                                                                                                                                                         
-            </nav>
-
-          </div>
-         
-        </div>
-      </div>
+          </li>
+          <li><a href="contact.php" class="nav-link text-left">Hỗ Trợ</a></li>
+          <li><a href="contact.php" class="nav-link text-left">Giới Thiệu</a></li>
+        </ul>
+      </nav>
 
     </div>
-    
-    </div>
 
+  </div>
+</div>
+
+</div>
+     
     
 
     <div class="site-section bg-light">
@@ -133,7 +115,7 @@
 
           <div class="col-lg-12">
             <div class="section-title mb-5">
-              <h2>Contact Us</h2>
+              <h2>Liên Lạc với Chúng Tôi</h2>
             </div>
             <form method="post">
               
@@ -182,22 +164,26 @@
     
     
     <div class="footer">
-      <div class="container">
-        
+    <div class="container">
 
-        <div class="row">
-          <div class="col-12">
-            <div class="copyright">
-                <p>
-                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
-                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    </p>
-            </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="copyright">
+            <p>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              Copyright &copy;<script>
+                document.write(new Date().getFullYear());
+              </script> DESIGN COPY BỞI HUY-QUÂN-KHANG<i class="icon-heart text-danger" aria-hidden="true"></i> 
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
           </div>
         </div>
       </div>
     </div>
+  </div>
+
+
     
 
   </div>
