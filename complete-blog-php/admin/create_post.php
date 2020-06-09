@@ -31,7 +31,7 @@
 				<input type="file" name="featured_image" >
 				<textarea name="body" id="body" cols="30" rows="10"><?php echo $body; ?></textarea>
 				<select name="topic_id">
-					<option value="" selected disabled>Chọn Loại Vật Liệu</option>
+					<option value="" selected disabled>Chọn Loại Sản Phẩm</option>
 					<?php foreach ($topics as $topic): ?>
 						<option value="<?php echo $topic['id']; ?>">
 							<?php echo $topic['name']; ?>
