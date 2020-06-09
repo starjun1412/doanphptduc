@@ -66,7 +66,7 @@
               
               </li>
               <li><a href="contact.php" class="nav-link text-left">Hỗ Trợ</a></li>
-              <li><a href="contact.php" class="nav-link text-left">Giới Thiệu</a></li>
+              <li><a href="gioithieu.php" class="nav-link text-left">Giới Thiệu</a></li>
             </ul>
           </nav>
 
