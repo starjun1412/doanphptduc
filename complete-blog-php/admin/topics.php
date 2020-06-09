@@ -14,7 +14,7 @@
 
 		<!-- Middle form - to create and edit -->
 		<div class="action">
-			<h1 class="page-title">Create/Edit Topics</h1>
+			<h1 class="page-title">Tạo và lưu loại sản phẩm</h1>
 			<form method="post" action="<?php echo BASE_URL . 'admin/topics.php'; ?>" >
 				<!-- validation errors for the form -->
 				<?php include(ROOT_PATH . '/includes/errors.php') ?>
@@ -25,9 +25,9 @@
 				<input type="text" name="topic_name" value="<?php echo $topic_name; ?>" placeholder="Topic">
 				<!-- if editing topic, display the update button instead of create button -->
 				<?php if ($isEditingTopic === true): ?> 
-					<button type="submit" class="btn" name="update_topic">UPDATE</button>
+					<button type="submit" class="btn" name="update_topic">Cập nhật loại</button>
 				<?php else: ?>
-					<button type="submit" class="btn" name="create_topic">Save Topic</button>
+					<button type="submit" class="btn" name="create_topic">Lưu Loại sản phẩm</button>
 				<?php endif ?>
 			</form>
 		</div>

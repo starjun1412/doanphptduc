@@ -16,7 +16,7 @@
 
 		<!-- Middle form - to create and edit  -->
 		<div class="action create-post-div">
-			<h1 class="page-title">Create/Edit Post</h1>
+			<h1 class="page-title">Đăng Bài</h1>
 			<form method="post" enctype="multipart/form-data" action="<?php echo BASE_URL . 'admin/create_post.php'; ?>" >
 				<!-- validation errors for the form -->
 				<?php include(ROOT_PATH . '/includes/errors.php') ?>
@@ -27,11 +27,11 @@
 				<?php endif ?>
 
 				<input type="text" name="title" value="<?php echo $title; ?>" placeholder="Title">
-				<label style="float: left; margin: 5px auto 5px;">Featured image</label>
+				<label style="float: left; margin: 5px auto 5px;">Hình ảnh</label>
 				<input type="file" name="featured_image" >
 				<textarea name="body" id="body" cols="30" rows="10"><?php echo $body; ?></textarea>
 				<select name="topic_id">
-					<option value="" selected disabled>Choose topic</option>
+					<option value="" selected disabled>Chọn Loại Vật Liệu</option>
 					<?php foreach ($topics as $topic): ?>
 						<option value="<?php echo $topic['id']; ?>">
 							<?php echo $topic['name']; ?>
@@ -57,9 +57,9 @@
 				
 				<!-- if editing post, display the update button instead of create button -->
 				<?php if ($isEditingPost === true): ?> 
-					<button type="submit" class="btn" name="update_post">UPDATE</button>
+					<button type="submit" class="btn" name="update_post">Cập Nhật</button>
 				<?php else: ?>
-					<button type="submit" class="btn" name="create_post">Save Post</button>
+					<button type="submit" class="btn" name="create_post">Đăng Bài</button>
 				<?php endif ?>
 
 			</form>

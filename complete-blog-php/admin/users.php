@@ -41,9 +41,9 @@
 
 				<!-- if editing user, display the update button instead of create button -->
 				<?php if ($isEditingUser === true): ?> 
-					<button type="submit" class="btn" name="update_admin">UPDATE</button>
+					<button type="submit" class="btn" name="update_admin">Lưu</button>
 				<?php else: ?>
-					<button type="submit" class="btn" name="create_admin">Save User</button>
+					<button type="submit" class="btn" name="create_admin">Thêm Người Dùng</button>
 				<?php endif ?>
 			</form>
 		</div>
