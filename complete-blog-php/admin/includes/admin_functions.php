@@ -205,6 +205,14 @@ function createTopic($request_values){
 				  VALUES('$topic_name', '$topic_slug')";
 		mysqli_query($conn, $query);
 
+
+		$lastsql = "select * from topics order by id desc limit 1";
+		$result = mysqli_query($conn, $lastsql);
+		$ltopic = mysqli_fetch_assoc($result);
+
+		$query = "insert into post_topic (post_id, topic_id) values ("+$ltopic["id"]+", "+$request_values["topic_id"]+")";
+		mysqli_query($conn, $query);
+
 		$_SESSION['message'] = "Topic created successfully";
 		header('location: topics.php');
 		exit(0);
@@ -237,7 +245,8 @@ function updateTopic($request_values) {
 	if (count($errors) == 0) {
 		$query = "UPDATE topics SET name='$topic_name', slug='$topic_slug' WHERE id=$topic_id";
 		mysqli_query($conn, $query);
-
+		$query = "update post_topic set topic_id =  "+$request_values["topic_id"]+" where topic_id=$topic_id";
+		mysqli_query($conn, $query);
 		$_SESSION['message'] = "Topic updated successfully";
 		header('location: topics.php');
 		exit(0);

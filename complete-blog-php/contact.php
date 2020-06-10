@@ -121,7 +121,7 @@
               
                   <div class="row">
                       <div class="col-md-6 form-group">
-                          <label for="fname">First Name</label>
+                          <label for="fname">Họ</label>
                           <input type="text" id="fname" class="form-control form-control-lg">
                       </div>
                       <div class="col-md-6 form-group">
